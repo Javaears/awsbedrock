@@ -1,0 +1,13 @@
+Here's an architecture diagram for a knowledge base AI application using AWS Bedrock and S3:
+
+The diagram illustrates the following:
+
+S3 (Simple Storage Service): This is where your knowledge base is stored. S3 provides scalable and cost-effective object storage, suitable for various data formats.
+
+AWS Bedrock: This is the core AI service. It utilizes large language models (LLMs) to process and interpret the knowledge base data stored in S3. Bedrock interacts with S3 to retrieve the necessary information for answering queries or generating content.
+
+Interaction Flow: The arrows depict the flow of information between S3 and Bedrock. Bedrock retrieves data from S3 to perform inference, and the knowledge base in S3 might be updated based on AI model outputs or user feedback.
+
+Other AWS Services (Optional): The diagram also suggests the integration with other AWS services like Lambda or API Gateway. These services can be used to control access to the AI application and make it accessible to users.
+
+This architecture allows you to leverage the power of Bedrock's AI models with your knowledge base stored in S3, creating a scalable and efficient AI application.
